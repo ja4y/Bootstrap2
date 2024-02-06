@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    font-family: 'Monoton', sans-serif;
+font-size: 16px;
+}
+
+p {
+    line-height: 1,6;
+    font-size: 1,05rem;
+    margin: 20px 0;
+}
+
+strong {
+    font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: rgb(202, 166, 236);
+    font-weight: normal;
+}
+
+.section {
+    width: 100%;
+    text-align: center;
+    background: rgba(223, 189, 194, 0.278);
+}
+
+.section--dark {
+    background: rgb(240, 62, 216);
+    color: rgb(70, 76, 82);
+}
+
+.section__content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner__logo {
+    height: 100px;
+    display: block;
+}
+
+#hero {
+    background: url(../images/japanese-camellia-7959403_1280.webp);
+    background-size: cover;
+}
+
+.ctabox {
+    margin: 100px 0;
+    max-width: 500px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.ctabox__heading {
+    font-size: 3.2em;
+    margin-top: 0;
+    color: aquamarine;
+}
+
+.ctabox__content p {
+    font-size: 1.15em;
+}
+
+.button {
+    display: inline-block;
+    padding: 8px 18px;
+    color: rgb(202, 166, 236);
+    background: white;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid rgb(202, 166, 236);
+    border-radius: 5px;
+    transition: color 0.15s, background 0.15s, border-color 1.15s;
+}
+
+.button:hover {
+    color: rgb(52, 198, 218);
+    border-color: rgb(187, 36, 207);
+    background: rgb(129, 55, 197);;
+}
+
+.icongroup {
+    display: flex;
+    align-items: center;
+}
+
+.icongroup__icon {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: color 0.15s;
+}
+
+.icongroup__icon:not(:last-child) {
+    margin-right: 15px;
+}
+
+.icongroup__icon:hover {
+    color: aquamarine;
+}
+
+.button i {
+    margin: 10px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1rem;
+}
+
+.grid__items {
+    width: 25%;
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+.grid__icon {
+    font-size: 5em;
+}
+.grid__text {
+    margin-top: 20px;
+    font-size: 1.15em;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 480px) {
+    .ctabox {
+        font-size: 0.85rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .grid {
+        font-size: 0.85rem;
+    }
+
+    .grid__items {
+        width: 50%;
+    }
+}
